@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Youtube music player beautifier",
+  "version": "1.0.0",
+  "description": "Turn your ugly youtube music player into a beautiful one",
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "icons": {
+    "48": "assets/icon.png",
+    "128": "assets/icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://music.youtube.com/*"],
+      "js": ["scripts/content.js"]
+    }
+  ]
+}
